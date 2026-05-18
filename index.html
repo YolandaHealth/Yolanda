@@ -23,7 +23,7 @@
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#initiatives">Initiatives</a>
+          <a href="#initiatives">Focus</a>
           <a href="#contact">Connect</a>
         </nav>
       </div>
@@ -35,14 +35,15 @@
         <div class="ambient-shape shape-two" aria-hidden="true"></div>
         <div class="container hero">
           <div class="hero-content">
-            <p class="hero-badge">Hormone & Gut Health Advocate</p>
+            <p class="hero-badge">Houston Women's Health Partner</p>
+            <p class="hero-kicker">Executive operations &middot; Investment &middot; Long-term wellness</p>
             <h1>
               Yolanda Karapetian
               <span>Partner, Women's Health</span>
             </h1>
             <p class="hero-desc">
-              Bridging science-aware wellness, thoughtful operations, and
-              investment strategy for modern women's long-term health.
+              Leading at the intersection of women's health, strategic
+              operations, and investment-backed growth for modern long-term care.
             </p>
             <div class="btn-group">
               <a class="btn btn-primary" href="https://wa.me/16266182090">WhatsApp</a>
@@ -54,20 +55,22 @@
             </div>
           </div>
 
-          <figure class="hero-avatar" aria-label="Portrait of Yolanda Karapetian">
-            <div class="avatar-ring">
-              <img
-                src="assets/yolanda-karapetian.jpg"
-                alt="Professional portrait of Yolanda Karapetian"
-              />
+          <aside class="hero-proof" aria-label="Yolanda Karapetian profile highlights">
+            <figcaption class="portrait-note">
+              <span>44,800+</span>
+              community members
+            </figcaption>
+            <div class="portrait-credential" aria-hidden="true">
+              <span>Houston</span>
+              Women's health operations & investment
             </div>
-          </figure>
+          </aside>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
-          <h2 class="section-title">About me</h2>
+          <h2 class="section-title">A refined approach to modern women's health.</h2>
           <div class="about-flex">
             <div class="about-text">
               <p>
@@ -111,9 +114,21 @@
         </div>
       </section>
 
+      <section class="visual-band" aria-label="Professional environments">
+        <div class="visual-panel visual-office">
+          <span>Executive strategy</span>
+        </div>
+        <div class="visual-panel visual-care">
+          <span>Modern care spaces</span>
+        </div>
+        <div class="visual-panel visual-boardroom">
+          <span>Investment discipline</span>
+        </div>
+      </section>
+
       <section id="initiatives" class="section tinted">
         <div class="container">
-          <h2 class="section-title">Key initiatives & investments</h2>
+          <h2 class="section-title">Strategic focus areas</h2>
           <div class="initiatives-grid">
             <article class="initiative-card">
               <div class="card-icon">01</div>
@@ -188,7 +203,7 @@
     </footer>
     <script>
       const revealItems = document.querySelectorAll(
-        ".hero-stats, .section-title, .about-text p, .profile-card, .initiative-card, .contact-card"
+        ".hero-stats, .section-title, .about-text p, .profile-card, .visual-panel, .initiative-card, .contact-card"
       );
 
       revealItems.forEach((item) => item.classList.add("reveal"));
