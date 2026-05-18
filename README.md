@@ -6,7 +6,7 @@ Static personal website prepared for GitHub Pages.
 
 - `index.html` - homepage content
 - `styles.css` - responsive styling
-- `assets/yolanda-karapetian.jpg` - portrait image
+- `assets/yolanda-executive-lobby-portrait.png` - executive portrait image
 
 ## GitHub Pages
 
