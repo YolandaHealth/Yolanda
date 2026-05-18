@@ -31,6 +31,8 @@
 
     <main>
       <section id="home" class="hero-section">
+        <div class="ambient-shape shape-one" aria-hidden="true"></div>
+        <div class="ambient-shape shape-two" aria-hidden="true"></div>
         <div class="container hero">
           <div class="hero-content">
             <p class="hero-badge">Hormone & Gut Health Advocate</p>
@@ -45,6 +47,10 @@
             <div class="btn-group">
               <a class="btn btn-primary" href="https://wa.me/16266182090">WhatsApp</a>
               <a class="btn btn-outline" href="#initiatives">Explore my work</a>
+            </div>
+            <div class="hero-stats" aria-label="Community size">
+              <strong>44,800+</strong>
+              <span>women have joined our community</span>
             </div>
           </div>
 
@@ -95,6 +101,10 @@
               <div class="profile-item">
                 <span>Work</span>
                 <strong>Operations & Investment</strong>
+              </div>
+              <div class="profile-item">
+                <span>Community</span>
+                <strong>44,800+ joined</strong>
               </div>
             </aside>
           </div>
@@ -176,5 +186,26 @@
         <p>Hormone health | Gut health | Long-term wellness</p>
       </div>
     </footer>
+    <script>
+      const revealItems = document.querySelectorAll(
+        ".hero-stats, .section-title, .about-text p, .profile-card, .initiative-card, .contact-card"
+      );
+
+      revealItems.forEach((item) => item.classList.add("reveal"));
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.16 }
+      );
+
+      revealItems.forEach((item) => observer.observe(item));
+    </script>
   </body>
 </html>
