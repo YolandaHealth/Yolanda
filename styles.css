@@ -99,6 +99,7 @@ nav a:hover {
 
 .hero {
   --active-bg: url("assets/tamira-hero.png"), url("assets/background-01.png");
+  --mobile-bg: url("assets/yolanda-mobile-portrait.png");
   position: relative;
   min-height: 92svh;
   display: grid;
@@ -574,7 +575,16 @@ footer {
 
 @media (max-width: 560px) {
   .hero {
-    padding-top: 108px;
+    min-height: auto;
+    display: block;
+    padding: calc(min(106vw, 540px) + 104px) 20px 42px;
+    background-color: #151714;
+    background-image:
+      linear-gradient(180deg, rgba(15, 18, 16, 0.18), rgba(15, 18, 16, 0.18) 42%, rgba(15, 18, 16, 0.78) 68%, #151714 100%),
+      var(--mobile-bg);
+    background-size: cover, 100% auto;
+    background-position: center top, center top;
+    background-repeat: no-repeat;
   }
 
   .hero__actions {
